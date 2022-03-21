@@ -1,5 +1,5 @@
-# Twitter Bot by MantiumAI
-Examples created with MantiumAI JavaScript client library for the integration with Twitter platforms.
+# WhatsApp ChatBot by MantiumAI
+Examples created with MantiumAI JavaScript client library for the integration with WhatsApp platforms.
 ## Prerequisites
 
 You will need the following things properly installed on your computer.
@@ -12,7 +12,7 @@ You will need the following things properly installed on your computer.
 
 - `git clone git@github.com:mantiumai/js-playground.git` this repository
 - `cd js-playground`
-- `git fetch origin Twitter-Bot && git checkout Twitter-Bot`
+- `git fetch origin WhatsApp-ChatBot && git checkout WhatsApp-ChatBot`
 - `npm install`
 
 ## Running / Development

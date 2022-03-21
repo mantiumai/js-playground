@@ -1,7 +1,7 @@
 {
   "name": "js-playground",
   "version": "1.0.0",
-  "description": "Examples created with MantiumAI JavaScript client library for the integration with Twitter.",
+  "description": "Examples created with MantiumAI JavaScript client library for the integration with WhatsApp.",
   "main": "server.js",
   "scripts": {
     "start": "node --trace-warnings server.js",
@@ -11,7 +11,7 @@
     "type": "git",
     "url": "git+https://github.com/mantiumai/js-playground.git"
   },
-  "keywords": ["Twitter", "Mantium", "Cohere", "AI"],
+  "keywords": ["WhatsApp-ChatBot", "Mantium", "OpenAI", "AI"],
   "author": "MantiumAi",
   "contributors": [
     {
@@ -23,15 +23,14 @@
   "bugs": {
     "url": "https://github.com/mantiumai/js-playground/issues"
   },
-  "homepage": "https://github.com/mantiumai/js-playground/tree/Twitter-Bot#readme",
+  "homepage": "https://github.com/mantiumai/js-playground/tree/WhatsApp-ChatBot#readme",
   "dependencies": {
     "@mantium/mantiumapi": "^0.1.5-beta",
     "body-parser": "^1.19.1",
     "cors": "^2.8.5",
-    "cron": "^1.8.2",
     "dotenv": "^10.0.0",
     "express": "^4.17.2",
-    "twitter-api-v2": "^1.11.0"
+    "twilio": "^3.72.0"
   }
 }
 
