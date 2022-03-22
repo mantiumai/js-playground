@@ -51,7 +51,7 @@ const tweet = async () => {
  * CronJob("* * * * * *")
  * CronJob(seconds, minits, hours, day, month, year)
  *
- * for every monring 5 AM then setting would be like
+ * for every morning 5 AM then setting would be like
  * CronJob("0 5 * * *")
  *
  * for every minute then setting would be like

@@ -60,7 +60,7 @@ export class Twitter {
 
   apiKey = null;
 
-  async getMessage(req, res) {
+  async postMessage(req, res) {
     let response = await this.getAnswer();
 
     if (response && response.output) {
