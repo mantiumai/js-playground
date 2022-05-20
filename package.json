@@ -1,0 +1,42 @@
+{
+  "name": "js-playground",
+  "version": "1.0.0",
+  "description": "Examples created with MantiumAI JavaScript client library for the integration with LinkedIn.",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node --trace-warnings server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mantiumai/js-playground.git"
+  },
+  "keywords": [
+    "LinkedIn",
+    "Mantium",
+    "Cohere",
+    "AI"
+  ],
+  "author": "Mantium",
+  "contributors": [
+    {
+      "name": "Kedar Vijay Kulkarni",
+      "url": "https://github.com/kedarvijaykulkarni"
+    }
+  ],
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mantiumai/js-playground/issues"
+  },
+  "homepage": "https://github.com/mantiumai/js-playground/tree/LinkedIn-Bot#readme",
+  "dependencies": {
+    "@mantium/mantiumapi": "^0.1.5-beta",
+    "axios": "^0.26.1",
+    "body-parser": "^1.19.1",
+    "cors": "^2.8.5",
+    "cron": "^1.8.2",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.2"
+  }
+}

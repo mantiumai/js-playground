@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Mantium</title>
+		<script src="https://cdn.tailwindcss.com"></script>
+		<style type="text/css">
+			body {
+				padding: 15px;
+			}
+		</style>
+	</head>
+	<body>
+		<h1 class="text-3xl font-bold mb-6">Hello Mantium!</h1>
+
+		<!-- <p><a href="/access">Get access</a></p> -->
+		<div
+			class="code-preview rounded-xl bg-gradient-to-r bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 p-2 sm:p-6 dark:bg-gray-800"
+		>
+			<form class="w-full" action="/mantium" method="post">
+				<label
+					for="countries"
+					class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400"
+					>Enter a text to execute</label
+				>
+				<div class="flex items-center border-b border-teal-500 py-2">
+					<input
+						class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none"
+						type="text"
+						placeholder="Challenges facing new startupe"
+						aria-label="Prompt input"
+						id="pinput"
+						name="pinput"
+					/>
+					<button
+						class="flex-shrink-0 bg-teal-500 hover:bg-teal-700 border-teal-500 hover:border-teal-700 text-sm border-4 text-white py-1 px-2 rounded"
+						type="submit"
+					>
+						execute
+					</button>
+					<button
+						class="flex-shrink-0 border-transparent border-4 text-teal-500 hover:text-teal-800 text-sm py-1 px-2 rounded"
+						type="button"
+					>
+						Cancel
+					</button>
+				</div>
+			</form>
+		</div>
+	</body>
+</html>
