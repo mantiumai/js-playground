@@ -7,6 +7,8 @@ import querystring from 'querystring';
 import request from 'request';
 
 const prompt_id = process.env.MANTIUM_LINKEDIN_PROMPT_ID;
+const client_id = process.env.LINKEDIN_CLIENTID;
+const client_secret = process.env.LINKEDIN_CLIENT_SECRET;
 const credentials = {
   username: process.env.MANTIUM_USER_NAME,
   password: process.env.MANTIUM_PASSWORD,
@@ -89,8 +91,8 @@ export class LinkedIn {
     const data = {
       grant_type: 'authorization_code',
       code: req.query.code,
-      client_id: '86ggqep9c8bstz',
-      client_secret: 'sSZ75iejrDFnx5SS',
+      client_id,
+      client_secret,
       redirect_uri: `${app_url}/auth`,
     };
 
@@ -205,13 +207,12 @@ export class LinkedIn {
   }
 
   linkedin(req, res) {
-    const clientID = '86ggqep9c8bstz';
     const scope = 'r_liteprofile r_emailaddress w_member_social';
     const url = 'https://www.linkedin.com/oauth/v2/authorization';
     const redirectURL = `${app_url}/auth&state=2022&scope=${scope}`;
     // const URLENCODE = encodeURIComponent(redirectURL);
     res.redirect(
-      `${url}/?response_type=code&client_id=${clientID}&redirect_uri=${redirectURL}`
+      `${url}/?response_type=code&client_id=${client_id}&redirect_uri=${redirectURL}`
     );
   }
 }
