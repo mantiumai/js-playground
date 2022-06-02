@@ -1,3 +1,9 @@
+## Shopify Integration
+
+Update the Shopify product description as per the product title and tags provided
+
+This is a webhook integration app, which listens to the Shopify webhook and observes the product gets created or edited on the online portal of the Shopify store, and if the description part is empty it creates wonderful text for the product using AI by taking product title and tags as an input to the prompt.
+
 ## Prerequisites
 
 You will need the following things properly installed on your computer.
@@ -10,7 +16,7 @@ You will need the following things properly installed on your computer.
 
 - `git clone git@github.com:mantiumai/js-playground.git` this repository
 - `cd js-playground`
-- `git fetch origin LinkedIn-Bot && git checkout LinkedIn-Bot`
+- `git fetch origin Shopify-Integration && git checkout Shopify-Integration`
 - `npm install`
 
 ## Running / Development
@@ -94,22 +100,14 @@ await client.post({
 });
 ```
 
+## Some example taken as referance
+- https://codesandbox.io/s/9p0xp?file=/src/index.js:268-296
+- https://github.com/Shopify/shopify-node-api
+- https://medium.com/@damianpieszczynski/validating-shopify-webhooks-with-aws-lambda-and-node-58a8da003ca4
+- https://shopify.dev/apps/getting-started#how-apps-fit-into-shopify
 
 
-//// example
-https://codesandbox.io/s/9p0xp?file=/src/index.js:268-296
-
-
-https://github.com/Shopify/shopify-node-api
-
-
-https://medium.com/@damianpieszczynski/validating-shopify-webhooks-with-aws-lambda-and-node-58a8da003ca4
-
-
-https://shopify.dev/apps/getting-started#how-apps-fit-into-shopify
-
-
-
+## Changes required if change in app/url need to update at
 
 (Shopify partner account)[https://partners.shopify.com/2452331/apps/6838541/edit]
 
@@ -119,19 +117,8 @@ open apps >> yourapp >> app setup >> Insert In URLs(Whitelisted redirection URL(
 
 Once you whitelist your URL there then the issue is solve
 
-
-change ngrok here
+### change ngrok urls here
 
 https://partners.shopify.com/2452331/apps/6838541/edit
 https://kedarkulkarni.myshopify.com/admin/settings/notifications
 
-
-
-
-
-
-
-
-
-Demo
-https://www.notion.so/mantiumai/Demos-f885d215ce424b6dba556fd5167ed438
